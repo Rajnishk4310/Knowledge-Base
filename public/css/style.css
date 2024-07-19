@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .list-group-item-action {
+    transition: background-color 0.2s ease;
+  }
+  
+  .list-group-item-action:hover {
+    background-color: #f1f1f1;
+  }
+  
+  a.btn-primary {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .text-muted {
+    font-size: 0.9em;
+  }
+  

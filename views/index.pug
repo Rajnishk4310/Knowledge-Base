@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1.text-center.mb-4= title
+  .list-group
+    each article in articles
+      a(href="/articles/"+article._id, class='list-group-item list-group-item-action d-flex justify-content-between align-items-center')
+        span
+          | #{article.title}
+          br
+          small.text-muted= article.author ? `by ${article.author.name}` : ''
+    if user
+      .mt-3
+        a.btn.btn-primary(href="/articles/add") Add a new article

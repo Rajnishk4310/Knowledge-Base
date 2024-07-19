@@ -1,0 +1,19 @@
+extends layout 
+
+block content
+  .container
+    h1= title
+    if errors 
+      ul 
+        each error in errors 
+          li.text-danger= error.msg
+          
+    form(method="POST", action="/users/login")
+      .mb-3
+        label(for="username" class="form-label") Username:
+        input(type="text" name="username" id="username" class="form-control")
+      .mb-3
+        label(for="password" class="form-label") Password:
+        input(type="password" name="password" id="password" class="form-control")
+      .d-grid
+        input(type="submit" value="Submit" class="btn btn-primary")
