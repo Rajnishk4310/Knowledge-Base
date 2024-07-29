@@ -22,7 +22,7 @@ html(lang="en")
           ul.navbar-nav.ms-auto
             if user
               li.nav-item
-                a.nav-link(href='/') #{user.name}
+                a.nav-link(href='/') Welcome #{user.name}
               li.nav-item
                 a.nav-link(href='/users/logout') Logout
             else
